@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>resource-server</name>
-    <description>Dummy resource servers that works with jwts</description>
+    <description>Dummy resource service</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
