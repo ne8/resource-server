@@ -20,7 +20,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableResourceServer
-public class OAuth2ResourceServerConfig extends ResourceServerConfigurerAdapter {
+public class SecurityResourceServerConfig extends ResourceServerConfigurerAdapter {
     @Autowired
     private Environment env;
 
