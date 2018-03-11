@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ro.ne8</groupId>
-    <artifactId>resource-server</artifactId>
+    <artifactId>test-resource-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>resource-server</name>
-    <description>Dummy resource servers that works with jwts</description>
+    <description>Dummy resource service</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

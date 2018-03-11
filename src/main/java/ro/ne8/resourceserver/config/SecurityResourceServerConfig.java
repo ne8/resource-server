@@ -20,7 +20,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableResourceServer
-public class OAuth2ResourceServerConfig extends ResourceServerConfigurerAdapter {
+public class SecurityResourceServerConfig extends ResourceServerConfigurerAdapter {
     @Autowired
     private Environment env;
 
@@ -52,10 +52,10 @@ public class OAuth2ResourceServerConfig extends ResourceServerConfigurerAdapter 
     @Bean
     public DataSource dataSource() {
         final DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(this.env.getProperty("spring.datasource.driver-class-name"));
-        dataSource.setUrl(this.env.getProperty("spring.datasource.url"));
-        dataSource.setUsername(this.env.getProperty("spring.datasource.username"));
-        dataSource.setPassword(this.env.getProperty("spring.datasource.password"));
+        dataSource.setDriverClassName(this.env.getProperty("spring.datasource.oauth2.driver-class-name"));
+        dataSource.setUrl(this.env.getProperty("spring.datasource.oauth2.url"));
+        dataSource.setUsername(this.env.getProperty("spring.datasource.oauth2.username"));
+        dataSource.setPassword(this.env.getProperty("spring.datasource.oauth2.password"));
         return dataSource;
     }
 
