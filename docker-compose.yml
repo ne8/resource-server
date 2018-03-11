@@ -1,0 +1,13 @@
+version: '3'
+services:
+
+  admin:
+    image: cpatrut/authorization-server
+    ports:
+     - "8080:8080"
+    depends_on:
+      - db
+  db:
+    image: postgres:9.5
+    ports:
+     - "5432:5432"
