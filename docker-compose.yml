@@ -1,7 +1,7 @@
 version: '3'
 services:
 
-  admin:
+  authorization-server:
     image: cpatrut/authorization-server
     ports:
      - "8080:8080"
